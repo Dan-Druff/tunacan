@@ -4,10 +4,15 @@ import { cors } from "hono/cors";
 import { deleteCookie, getCookie, setCookie } from "hono/cookie";
 import { serveStatic } from "hono/deno";
 import { HomePage } from "./routes/Home.tsx";
+import { AboutPage } from "./routes/About.tsx";
 const app = new Hono();
 app.use("/*", cors());
 app.use("/static/*", serveStatic({ root: "./" }));
+app.get("/about",(c)=>{
+    return c.html(<AboutPage></AboutPage>)
+})
 app.get("/", (c) => {
   return c.html(<HomePage></HomePage>);
 });
+
 Deno.serve(app.fetch);
