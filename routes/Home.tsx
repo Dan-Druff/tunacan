@@ -485,7 +485,7 @@ export function HomePage() {
                         <h4>Navigate</h4>
                         <ul>
                             <li><a href="#shows">Upcoming Shows</a></li>
-                            <li><a href="#about">About Us</a></li>
+                            <li><a href="/about">About Us</a></li>
                             <li><a href="#performers">Performers</a></li>
 
                         </ul>
