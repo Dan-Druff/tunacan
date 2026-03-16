@@ -1,7 +1,7 @@
 console.log(`TUNA CAN UP AND RUNNING`)
 import { Hono } from "hono";
 import { cors } from "hono/cors";
-import { deleteCookie, getCookie, setCookie } from "hono/cookie";
+// import { deleteCookie, getCookie, setCookie } from "hono/cookie";
 import { serveStatic } from "hono/deno";
 import { HomePage } from "./routes/Home.tsx";
 import { AboutPage } from "./routes/About.tsx";
